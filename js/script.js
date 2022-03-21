@@ -23,3 +23,13 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll')
   }
 })
+
+/* Swiper JS */
+const swiper = new Swiper('.swiper', {
+  slidePerview: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true
+})

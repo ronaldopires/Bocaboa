@@ -275,4 +275,56 @@ main {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+/* ##### Testimonials ##### */
+#testimonials {
+  background: #fff;
+}
+#testimonials .containers {
+  margin: 0;
+}
+#testimonials header {
+  margin: 0 1.5rem 0 1.5rem;
+}
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+#testimonials blockquote p {
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  line-height: 0.5rem;
+  vertical-align: bottom;
+  padding-left: 0.2rem;
+  color: var(--base-color);
+}
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.7rem;
+}
+
+/* Swiper JS */
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1.5rem;
+}
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
 /* ##### Footer ##### */
