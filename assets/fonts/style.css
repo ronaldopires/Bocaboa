@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?iozn32');
-  src:  url('fonts/icomoon.eot?iozn32#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?iozn32') format('truetype'),
-    url('fonts/icomoon.woff?iozn32') format('woff'),
-    url('fonts/icomoon.svg?iozn32#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?hy93qj');
+  src:  url('fonts/icomoon.eot?hy93qj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hy93qj') format('truetype'),
+    url('fonts/icomoon.woff?hy93qj') format('woff'),
+    url('fonts/icomoon.svg?hy93qj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fastfood_food_hotdog_meat_bun_icon:before {
+.icon-email_icon:before {
+  content: "\e908";
+}
+.icon-fastfood_icon:before {
   content: "\e907";
+}
+.icon-call_icon:before {
+  content: "\e909";
 }
 .icon-close_round_icon:before {
   content: "\e900";
+}
+.icon-gps_location_icon:before {
+  content: "\e90a";
 }
 .icon-menu_hamburger:before {
   content: "\e906";
