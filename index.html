@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
   <head>
-    <!-- Page Info -->
+    <!-- Metas-->
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A website developed with html, css and javascript"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Ronaldo Carvalho" />
+    <!-- Page Info -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="#" />
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
@@ -217,8 +225,38 @@
               class="btn-contact"
               href="https://api.whatsapp.com/send?phone=+5511955544918&text=Olá, Gostaria de ver o seu catalogo."
               target="_blank"
-              ><i class="icon-whatsapp"></i>Entrar em contato</a
-            >
+              ><i class="icon-whatsapp"></i>Entrar em contato
+            </a>
+          </div>
+          <p>Deixe sua mensagem!</p>
+          <div class="grid">
+            <form class="form" action="" method="get">
+              <label for="name">Nome</label>
+              <input
+                class="inputs"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
+              <label for="email">E-mail</label>
+              <input
+                class="inputs"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+              <label for="message">Mensagem</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="40"
+                rows="10"
+                required
+              ></textarea>
+              <button type="submit" class="btn-send" id="send">Enviar</button>
+            </form>
           </div>
           <div class="links">
             <ul class="grid">
@@ -234,7 +272,31 @@
           </div>
         </div>
       </section>
+      <div class="divider-1"></div>
     </main>
+    <footer class="sections">
+      <div class="containers grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Boca<span>boa</span>.</a>
+          <p>&copy;2022 Bocaboa</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="social">
+          <a class="#" href="" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a class="#" href="" target="_blank">
+            <i class="icon-linkedin"></i>
+          </a>
+          <a class="#" href="" target="_blank">
+            <i class="icon-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#home">
+      <i class="icon-github"></i>
+    </a>
     <!-- Scroll Review JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Swiper JS -->

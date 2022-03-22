@@ -1,8 +1,6 @@
 const nav = document.querySelector('#main-header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 const links = document.querySelectorAll('nav ul li a')
-const header = document.querySelector('#main-header')
-const navHeight = header.offsetHeight
 
 for (const element of toggle) {
   element.addEventListener('click', function () {
@@ -15,13 +13,29 @@ for (const link of links) {
     nav.classList.remove('show')
   })
 }
-
-window.addEventListener('scroll', function () {
+/* Scroll Header */
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#main-header')
+  const navHeight = header.offsetHeight
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
+}
+/* Button back to top */
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+  if (this.window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
 })
 
 /* Swiper JS */
@@ -38,7 +52,6 @@ const swiper = new Swiper('.swiper', {
 const scrollReveal = ScrollReveal({
   origin: 'bottom',
   distance: '50px',
-  easing: 'cubic-bezier(0.5, 0, 0, 1)',
   duration: 700,
   reset: true
 })
@@ -49,7 +62,8 @@ scrollReveal.reveal(
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials,
-  #contact .text, #cotact .links
+  #contact .text, #cotact .links,
+  footer .brand, footer .social
   `,
   { interval: 100 }
 )

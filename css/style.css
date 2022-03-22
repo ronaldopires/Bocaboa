@@ -16,6 +16,9 @@
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1.125rem;
 }
 
 /* ##### Base ##### */
@@ -114,7 +117,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -160,6 +163,9 @@ body {
 .sections {
   padding: 5rem 0;
 }
+.sections .subtitle {
+  font-size: var(--subtitle-font-size);
+}
 #main-header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
@@ -180,6 +186,9 @@ body {
 }
 .logo span {
   color: var(--base-color);
+}
+.logo-alt span {
+  color: var(--body-color);
 }
 main {
   margin-top: calc(var(--header-height) + 2rem);
@@ -348,4 +357,105 @@ main {
 #contact ul li i {
   color: var(--base-color);
 }
+/* Forms */
+.form {
+  display: grid;
+}
+.form input {
+  height: 2rem;
+}
+.form label {
+  color: var(--base-color);
+  margin-bottom: 0.2rem;
+}
+.form input,
+.form textarea {
+  margin-bottom: 1rem;
+  border: 1px solid var(--base-color);
+  border-radius: 0.25rem;
+}
+.form input:focus {
+  border: 1px solid var(--base-color);
+}
+.form .btn-send {
+  background: var(--base-color);
+  border: 0;
+  padding: 1rem;
+  color: var(--text-color-light);
+  font: 500 1rem 'DM Sans', sans-serif;
+  border-radius: 0.25rem;
+}
+.form .btn-send:hover {
+  background: var(--base-color-alt);
+}
 /* ##### Footer ##### */
+footer {
+  background: var(--base-color);
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+footer .social a:hover {
+  transform: scale(140%);
+}
+
+.back-to-top {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem;
+  clip-path: circle();
+  font-size: 1.5rem;
+  line-height: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+}
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ##### Media Queries ##### */
+/*
+  Extra Large Devices: 1200 >
+  Large Devices: 1023 >
+  Large Devices 992 >
+  Medium Devices 767 >
+*/
+
+/* Medium Devices 1200 */
+@media (min-width: 1200px) {
+}
+/* Medium Devices 1023 */
+@media (min-width: 1023px) {
+}
+/* Medium Devices 992 */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+}
+/* Medium Devices 767 */
+@media (min-width: 767px) {
+}
