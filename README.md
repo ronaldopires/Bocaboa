@@ -1,7 +1,8 @@
 <h1 align="center">Bocaboa</h1>
 
-## Projeto desenvolvido com auxilio do curso da Rocketseat
-https://app.rocketseat.com.br/
+## Projeto desenvolvido com auxilio do curso da [Rocketseat](https://app.rocketseat.com.br/)
+
+- [Bocaboa](https://ronaldopires.github.io/Bocaboa/)
 
 ## Descrição do Projeto
 <p align="center">A intenção desse projeto é mostrar meus conhecimentos em web com a criação de uma página simples porém completa de informações e muito bem construída.</p>
