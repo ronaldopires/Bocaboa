@@ -10,7 +10,6 @@ https://app.rocketseat.com.br/
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
 - [Figma](https://www.figma.com/file/xUDUzZGGyxnFvUWiN09DDX/Origin-Six-(Community)?node-id=0%3A1)
 - [Conteúdo das aulas](https://www.notion.so/Aula-01-7ad86dae11c14c87a4082dede02eeaf2)
 - [Link para Fotos](https://unsplash.com/)
