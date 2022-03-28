@@ -22,7 +22,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Scroll Reveal JS](https://scrollrevealjs.org/)
 
 ## Utilizei HTML5, CSS3 e JavaScript puro para o desenvolvimento.
-# O site está 100% responsivo 
+### O site está 100% responsivo 
 
 ## Status
 <h4 align="center"> 
