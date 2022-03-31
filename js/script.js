@@ -60,6 +60,7 @@ ScrollReveal({
   duration: 900,
   delay: 400,
   distance: '60px',
+  opacity: 0,
   reset: true
 })
 
@@ -68,15 +69,12 @@ ScrollReveal().reveal('#about .image, #testimonials header, .form', {
   origin: 'top'
 })
 ScrollReveal().reveal('#home .text, #services .card, #contact .links', {
-  origin: 'left'
+  origin: 'bottom'
 })
-ScrollReveal().reveal(
-  '#home .image, #services header, #contact .text, footer .social',
-  {
-    delay: 150,
-    origin: 'right'
-  }
-)
+ScrollReveal().reveal('#home .image, #services header, #contact .text', {
+  delay: 150,
+  origin: 'top'
+})
 ScrollReveal().reveal(
   '#about .text, #testimonials .testimonials, footer .brand',
   {
@@ -86,7 +84,7 @@ ScrollReveal().reveal(
 )
 const sections = document.querySelectorAll('main section[id]')
 function activateMenuCurrent() {
-  const checkpoint = window.pageYOffset + (window.innerHeight / 9) * 4
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
   for (const section of sections) {
     const sectionTop = section.offsetTop
     const sectionHeight = section.offsetHeight
