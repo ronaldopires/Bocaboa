@@ -7,7 +7,7 @@
 /* ##### Variables ##### */
 :root {
   --header-height: 4.5rem;
-  --hue: 159;
+  --hue: 260;
   /* hsl color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -119,6 +119,7 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 .title {
   font: 700 var(--title-font-size) var(--title-font);
