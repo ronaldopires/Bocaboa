@@ -119,7 +119,6 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 .title {
   font: 700 var(--title-font-size) var(--title-font);
